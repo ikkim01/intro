@@ -1,0 +1,115 @@
+:root{
+    /* 기본색 */
+    --white-color : #fff;
+    --blue-color : #0071e3;
+    --grey-color : rgb(48 48 48);
+    --font-color : rgb(208, 205, 205);
+    --background-color : #F2F2F2;
+    --orange-color : #bf4800;
+    --red-color : #FF4848;
+    --pink-color : #C90049;
+    --black-color: #000000;
+
+    /* 기본 사이즈 */
+    --side-padding: 20px;
+    --logo-size: 20px;
+    --main-padding: 50px;
+    --side-margin:15px;
+
+    /* 폰트 사이즈 */
+    --font-large:18px;
+    --font-small:13px;
+    --font-medium:14px;
+    --font-micro:10px;
+}
+
+*{
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style : none;
+}
+
+/* 네비게이션 바 */
+
+header{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: var(--grey-color);
+}
+
+header .logo{
+    font-size: var(--logo-size);
+    color: var(--font-color);
+    margin-top: calc(var(--side-padding) /2)
+}
+
+header a:visited {
+    color: var(--font-color);
+}
+header a:hover {
+    color: var(--white-color);
+}
+
+header .media {
+    font-size:var(--logo-size);
+}
+
+header .menu,
+header .media {
+    display:flex;
+}
+
+header .menu li,
+header .media li{
+    margin:calc(var(--side-padding)/2) var(--side-padding);
+}
+/* 2019 메인 파트 */
+main{
+    display:flex;
+    justify-content: center;
+    margin-top:var(--side-padding);
+}
+main .tkd,
+main .coupang {
+    width: 345px;
+    height:535px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    margin: var(--side-margin);
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .tkd img,
+main .coupang img{
+    width: 90%;
+    height:90%;
+    border-radius: 5px;
+    
+}
+main .explain1{
+    height:535px;
+    width:450px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    margin: var(--side-margin);
+    background-color: var(--background-color);
+    text-align: center;
+}
+main .explain1 h1{
+    margin-top: calc(var(--side-padding)/2);
+}
+main .explain1 h1,
+main .explain1 h3{
+    padding-top:var(--side-padding);
+}
+main .explain1 h4{
+    padding-top:calc(var(--side-padding)/2);
+}

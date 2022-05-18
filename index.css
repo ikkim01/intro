@@ -1,0 +1,134 @@
+:root{
+    /* 기본색 */
+    --white-color : #fff;
+    --blue-color : #0071e3;
+    --grey-color : rgb(48 48 48);
+    --font-color : rgb(208, 205, 205);
+    --background-color : #F2F2F2;
+    --orange-color : #bf4800;
+    --red-color : #FF4848;
+    --pink-color : #C90049;
+    --black-color: #000000;
+
+    /* 기본 사이즈 */
+    --side-padding: 20px;
+    --logo-size: 20px;
+    --main-padding: 50px;
+    --side-margin:15px;
+
+    /* 폰트 사이즈 */
+    --font-large:18px;
+    --font-small:13px;
+    --font-medium:14px;
+    --font-micro:10px;
+}
+
+* {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:var(--black-color);
+}
+
+li{
+    list-style : none;
+}
+
+/* 네비게이션 바 */
+
+header{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: var(--grey-color);
+}
+
+header .logo{
+    font-size: var(--logo-size);
+    color: var(--font-color);
+    margin-top: calc(var(--side-padding) /2)
+}
+
+header a:visited {
+    color: var(--font-color);
+}
+header a:hover {
+    color: var(--white-color);
+}
+
+header .media {
+    font-size:var(--logo-size);
+}
+
+header .menu,
+header .media {
+    display:flex;
+}
+
+header .menu li,
+header .media li{
+    margin:calc(var(--side-padding)/2) var(--side-padding);
+}
+/* 메인 */
+main{
+    display:flex;
+    justify-content: center;
+    margin-top: var(--side-padding);
+}
+main a{
+    margin:15px;
+}
+main .imagebox{
+    width: 266px;
+    height:291px;
+}
+main .imagebox img{
+    width:100%;
+    height:100%;
+}
+main ul{
+    width: 345px;
+    height:535px;
+    background-color: var(--background-color);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 0;
+}
+main ul:hover{
+    cursor: pointer;
+    color:var(--blue-color);
+}
+main ul li{
+    margin-top: var(--main-padding);
+}
+
+main ul .text{
+    font-size:var(--font-large);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(var(--side-padding)/2);
+}
+main ul .text .ex{
+    font-size:var(--font-medium);
+    margin-top: calc(var(--side-padding)/4);
+    font-weight: normal;
+}
+main ul .now1,
+main ul .now2,
+main ul .now3{
+    font-size: var(--font-small);
+}
+main ul .now1{
+    color:var(--red-color);
+}
+main ul .now2{
+    color:var(--orange-color);
+}
+main ul .now3{
+    color:var(--pink-color);
+}

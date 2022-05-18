@@ -1,0 +1,70 @@
+:root{
+    /* 기본색 */
+    --white-color : #fff;
+    --blue-color : #0071e3;
+    --grey-color : rgb(48 48 48);
+    --font-color : rgb(208, 205, 205);
+    --background-color : #F2F2F2;
+    --orange-color : #bf4800;
+    --red-color : #FF4848;
+    --pink-color : #C90049;
+    --black-color: #000000;
+
+    /* 기본 사이즈 */
+    --side-padding: 20px;
+    --logo-size: 20px;
+    --main-padding: 50px;
+
+    /* 폰트 사이즈 */
+    --font-large:18px;
+    --font-small:13px;
+    --font-medium:14px;
+    --font-micro:10px;
+}
+
+*{
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style : none;
+}
+
+/* 네비게이션 바 */
+
+header{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: var(--grey-color);
+}
+
+header .logo{
+    font-size: var(--logo-size);
+    color: var(--font-color);
+    margin-top: calc(var(--side-padding) /2)
+}
+
+header a:visited {
+    color: var(--font-color);
+}
+header a:hover {
+    color: var(--white-color);
+}
+
+header .media {
+    font-size:var(--logo-size);
+}
+
+header .menu,
+header .media {
+    display:flex;
+}
+
+header .menu li,
+header .media li{
+    margin:calc(var(--side-padding)/2) var(--side-padding);
+}
