@@ -48,7 +48,9 @@ header .logo{
     color: var(--font-color);
     margin-top: calc(var(--side-padding) /2)
 }
-
+header a{
+    color:var(--font-color);
+}
 header a:visited {
     color: var(--font-color);
 }

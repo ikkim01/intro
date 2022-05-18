@@ -15,7 +15,7 @@
     --logo-size: 20px;
     --main-padding: 50px;
     --side-margin:15px;
-    
+
     /* 폰트 사이즈 */
     --font-large:18px;
     --font-small:13px;
@@ -47,6 +47,9 @@ header .logo{
     font-size: var(--logo-size);
     color: var(--font-color);
     margin-top: calc(var(--side-padding) /2)
+}
+header a{
+    color:var(--font-color);
 }
 
 header a:visited {
