@@ -11,6 +11,7 @@
     --black-color: #000000;
     --light-grey-color: #aeaeae;
     --border-color: #e5e2e2;
+    --thumbs-color: #FAED7D;
 
     /* 기본 사이즈 */
     --side-padding: 20px;
@@ -24,6 +25,8 @@
     --font-small:13px;
     --font-medium:14px;
     --font-micro:10px;
+    --news-size:25px;
+    --emoji-size:35px;
 }
 
 *{
@@ -74,4 +77,82 @@ header .media {
 header .menu li,
 header .media li{
     margin:calc(var(--side-padding)/2) var(--side-padding);
+}
+
+/*메인 뉴스 타이틀 */
+main .newstitle{
+    display: flex;
+    flex-direction: column;
+    margin: 0 var(--main-padding);
+}
+main .newstitle h1{
+    text-align: center;
+    font-size: var(--main-padding);
+    margin: var(--main-margin);
+}
+
+main .newstitle .time{
+    color:var(--light-grey-color);
+}
+main .newstitle .writer{
+    text-align: right;
+    color:var(--light-grey-color);
+}
+
+main .newsmain {
+    display: flex;
+    margin: var(--main-padding);
+}
+
+main .newsmain .newsimg{
+    height: 500px;
+    width: auto;
+    margin-right: var(--main-margin);
+}
+main .newsmain .newsimg img{
+    width: 100%;
+    height:100%;
+    border-radius: 4%;
+}   
+main .newsmain .newstext{
+    display: flex;
+    flex-direction: column;
+    font-size:var(--news-size);  
+    align-items: center;
+    justify-content: center;  
+}
+main .newsmain .newstext .hashtag{
+    margin-bottom: var(--side-padding);
+    color:var(--blue-color);    
+} 
+main .newsfoot{
+    margin: var(--main-padding);
+}
+
+main .newsfoot .emoji{
+    display: flex;
+    justify-content: center;
+}
+main .newsfoot .emoji ul{
+    margin:var(--main-padding);
+    text-align: center;
+    padding:var(--side-padding);
+}
+main .newsfoot .emoji ul .like,
+main .newsfoot .emoji ul .love,
+main .newsfoot .emoji ul .sad{
+    font-size:var(--emoji-size);
+    color:var(--light-grey-color);
+}
+main .newsfoot .emoji .like1:hover i{
+    cursor: pointer;
+    color: var(--thumbs-color);
+}
+main .newsfoot .emoji .love1:hover i {
+    cursor: pointer;
+    color: var(--red-color);
+}
+main .newsfoot .emoji .sad1:hover i{
+    cursor: pointer;
+    color:var(--blue-color);
 }
