@@ -9,12 +9,15 @@
     --red-color : #FF4848;
     --pink-color : #C90049;
     --black-color: #000000;
+    --light-grey-color: #aeaeae;
+    --border-color: #e5e2e2;
 
     /* 기본 사이즈 */
     --side-padding: 20px;
     --logo-size: 20px;
     --main-padding: 50px;
     --side-margin:15px;
+    --main-margin:25px;
 
     /* 폰트 사이즈 */
     --font-large:18px;
@@ -71,4 +74,103 @@ header .media {
 header .menu li,
 header .media li{
     margin:calc(var(--side-padding)/2) var(--side-padding);
+}
+/* 2022메인 타이틀 */
+main .maintitle{
+    height :600px;
+    width: auto;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom : 2px solid var(--border-color);
+    margin: 0 30px;
+}
+main .hello{
+    margin-top: var(--side-padding);
+    font-size: 120px;
+}
+main .scroll{
+    font-size: var(--main-padding);
+    color:var(--light-grey-color);
+    margin-top: 100px;
+}
+/* 소개 */
+main .intro{
+    text-align: center;
+    margin-top: var(--main-padding  );
+}
+main .introduce{
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--main-padding);
+    margin: 0 30px;
+    border-bottom : 2px solid var(--border-color);
+}
+main .introduce .imagebox{
+    width: auto;
+    height:410px;
+    background-color: var(--background-color);
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    margin:var(--side-padding); 
+}
+main .introduce .imagebox img{
+    width: 90%;
+    height: 90%;
+    border-radius: 3%;
+}
+main .introduce .textbox{
+    margin: var(--side-padding);
+    padding: calc(var(--side-margin)*2);
+    font-size: calc(var(--font-small)*2);
+    font-weight: bold;
+    line-height: 50px;
+    background-color: var(--background-color);
+}
+/* 취미 파트 */
+main .hobby {
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+    padding-bottom: var(--side-padding);
+}
+main .hobby ul {
+    width: 330px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: var(--background-color);
+    margin: var(--main-margin) calc(var(--side-padding)/2);
+    border-radius: 3%;
+}
+main .hobby ul .imagebox1{
+    width: 250px;
+    height:300px;
+    margin-top: var(--main-margin);
+}
+main .hobby ul .imagebox1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    transition: all 0.2s linear;
+}
+main .hobby ul .imagebox1:hover img{
+    transform: scale(1.4);
+}
+main .hobby ul .text {
+    font-size: var(--font-large );
+    margin-top: var(--main-margin);
+    font-weight: bold;
+}
+main .hobby ul .textex{
+    margin: var(--main-margin);
+    text-align: center;
+    line-height:  var(--main-margin);
 }

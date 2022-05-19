@@ -9,12 +9,15 @@
     --red-color : #FF4848;
     --pink-color : #C90049;
     --black-color: #000000;
+    --light-grey-color: #aeaeae;
+    --border-color: #e5e2e2;
 
     /* 기본 사이즈 */
     --side-padding: 20px;
     --logo-size: 20px;
     --main-padding: 50px;
     --side-margin:15px;
+    --main-margin:25px;
 
     /* 폰트 사이즈 */
     --font-large:18px;
